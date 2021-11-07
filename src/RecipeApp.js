@@ -1,16 +1,13 @@
 import './RecipeApp.css';
 
-import Recipe from './Recipe.js';
+import RecipeList from './RecipeList.js';
+import Navbar from './navbar.js';
 
 function RecipeApp() {
   return (
     <div className="App">
-      <Recipe 
-      title="pasta" 
-      ingredients={['flour', 'water']}
-      instructions="Mix ingredients"
-      img="spaghetti.jpg"
-      />
+    <Navbar />
+      <RecipeList />
     </div>
   );
 }
